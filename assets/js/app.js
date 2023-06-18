@@ -20,11 +20,15 @@ activeElems.forEach(activeElem => {
   }
 });
 
-const documentWidth = document.documentElement.offsetWidth;
 
-if (documentWidth < 1050) {
-  alert('Ваше устройство не поддерживается! Перейдите на ПК версию');
-}
+
+window.addEventListener(`load`, event => {
+  const documentWidth = document.documentElement.offsetWidth;
+
+  if (documentWidth < 1050) {
+    alert('Ваше устройство не поддерживается! Перейдите на ПК версию');
+  }
+});
 
 window.addEventListener(`resize`, event => {
   const documentWidth = document.documentElement.offsetWidth;
@@ -32,4 +36,4 @@ window.addEventListener(`resize`, event => {
   if (documentWidth < 1050) {
     alert('Ваше устройство не поддерживается! Перейдите на ПК версию');
   }
-}, false);
+});
