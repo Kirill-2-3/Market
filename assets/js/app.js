@@ -26,7 +26,7 @@ window.addEventListener(`load`, event => {
   const documentWidth = document.documentElement.offsetWidth;
 
   if (documentWidth < 1050) {
-    alert('Ваше устройство не поддерживается! Перейдите на ПК версию');
+    alert('Сайт не поддерживает данное разрешение экрана!');
   }
 });
 
@@ -34,6 +34,6 @@ window.addEventListener(`resize`, event => {
   const documentWidth = document.documentElement.offsetWidth;
 
   if (documentWidth < 1050) {
-    alert('Ваше устройство не поддерживается! Перейдите на ПК версию');
+    alert('Сайт не поддерживает данное разрешение экрана!');
   }
 });
